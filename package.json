@@ -10,16 +10,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@radix-ui/react-tooltip": "^1.0.7",
     "@tonconnect/ui-react": "^2.0.5",
     "clsx": "^2.1.1",
+    "hex-color-to-color-name": "^1.0.2",
     "react": "^18.2.0",
+    "react-color": "^2.19.3",
     "react-dom": "^18.2.0",
+    "react-pick-color": "^2.0.0",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-animated": "^1.1.0"
   },
   "devDependencies": {
     "@types/node": "^20.14.2",
     "@types/react": "^18.2.66",
+    "@types/react-color": "^3.0.12",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
