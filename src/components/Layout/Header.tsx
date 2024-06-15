@@ -12,10 +12,18 @@ export const Header = () => {
           </li>
           <li className="flex items-center divide-x divide-[#C8D2D9]">
             <div className="flex gap-2 pr-6">
-              <a target="_blank" href="https://getgems.io/">
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://getgems.io/"
+              >
                 <img src="/svg/GetGems.svg" alt="getgems" />
               </a>
-              <a target="_blank" href="https://tonviewer.com/">
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://tonviewer.com/"
+              >
                 <img src="/svg/TonViewer.svg" alt="tonviewer" />
               </a>
             </div>

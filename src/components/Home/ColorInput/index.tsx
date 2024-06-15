@@ -1,7 +1,6 @@
 import {
   ArrowPointingIn,
   CloseIcon,
-  CopyIcon,
   EyeDropper,
 } from "@/assets/icons";
 import { useState } from "react";
@@ -18,7 +17,7 @@ export default function ColorInput() {
 
   const sampleColor = async () => {
     if ("EyeDropper" in window) {
-      const eyeDropper = new (window as any).EyeDropper();
+      const eyeDropper = new (window as unknown | any).EyeDropper();
       try {
         const result = await eyeDropper.open();
         if (result && result.sRGBHex) {
@@ -31,9 +30,7 @@ export default function ColorInput() {
       console.error("EyeDropper API is not supported in this browser.");
     }
   };
-  const handleCopy = () => {
-    navigator.clipboard.writeText(hexColor);
-  };
+
   const colorName = GetColorName(hexColor);
 
   const brightness = getBrightness(hexColor);
