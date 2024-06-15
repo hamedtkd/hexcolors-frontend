@@ -1,3 +1,6 @@
+
+@import url("assets/styles/font.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 47.4% 11.2%;
 
-    --border: 214.3 31.8% 91.4%;
+    --border: #E2E7EB;
     --primary: #0098EA;
     --secondary: 210 40% 96.1%;
 
@@ -25,6 +28,7 @@
 @layer base {
   * {
     @apply border-border;
+    font-family: "Proxima Nova Font"
   }
   body {
     @apply bg-background text-foreground;
