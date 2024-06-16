@@ -1,7 +1,7 @@
 {
-    "url": "http://localhost:5173/",
-    "name": "Demo Dapp with React UI",
-    "iconUrl": "http://localhost:5173/fav.svg",
-    "termsOfUseUrl": "http://localhost:5173/docs/terms-of-use.txt",
-    "privacyPolicyUrl": "http://localhost:5173/docs/privacy-policy.txt"
+    "url": "https://hexcolors.me/",
+    "name": "Hex Colors",
+    "iconUrl": "https://hexcolors.me/fav.svg",
+    "termsOfUseUrl": "https://raw.githubusercontent.com/dezh-tech/hexcolors-frontend/blob/main/public/docs/terms-of-use.txt",
+    "privacyPolicyUrl": "https://raw.githubusercontent.com/dezh-tech/hexcolors-frontend/blob/main/public/docs/privacy-policy.txt"
 }
