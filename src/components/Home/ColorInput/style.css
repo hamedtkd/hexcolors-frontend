@@ -1,5 +1,5 @@
 .custom-input-color input[name="hex"] {
-  width: 68px !important;
+  width: 80px !important;
 }
 
 .custom-input-color input[type="number"]::-webkit-inner-spin-button,

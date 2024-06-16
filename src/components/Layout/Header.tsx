@@ -13,7 +13,7 @@ export const Header = () => {
           <li className="flex items-center divide-x divide-[#C8D2D9]">
             <div className="flex gap-2 pr-6">
               <a
-                className="hex-button flex items-center rounded-full bg-transparent w-fit border-black size-[56px] p-3 "
+                className="hex-button flex items-center rounded-full bg-transparent justify-center border-0 ring-2 ring-black size-[56px] p-3 "
                 rel="noopener noreferrer"
                 target="_blank"
                 href="https://getgems.io/"
@@ -21,7 +21,7 @@ export const Header = () => {
                 <img src="/svg/GetGems.svg" alt="getgems" />
               </a>
               <a
-                className="hex-button flex items-center rounded-full bg-transparent w-fit border-black size-[56px] p-3 "
+                className="hex-button flex items-center rounded-full bg-transparent justify-center border-0 ring-2 ring-black size-[56px] p-3 "
                 rel="noopener noreferrer"
                 target="_blank"
                 href="https://tonviewer.com/"
