@@ -16,7 +16,13 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+
+    fontFamily: {
+      'Proxima': ["Proxima Nova Font", 'ui-sans-serif', 'system-ui', 'Helvetica', 'Arial', 'sans-serif'],
+    },
+
     extend: {
+
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -96,8 +102,8 @@ module.exports = {
     },
   },
   plugins: [
-  tailwindcssAnimated,
-  tailwindcssAnimate,
+    tailwindcssAnimated,
+    tailwindcssAnimate,
     function ({
       addComponents
     }) {

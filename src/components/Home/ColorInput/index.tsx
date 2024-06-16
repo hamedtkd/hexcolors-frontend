@@ -115,7 +115,7 @@ export default function ColorInput() {
         </div>
       </div>
       <div className="mt-6">
-        <Button className="font-semibold text-xl text-white">
+        <Button className="!font-semibold text-xl text-white">
           Mint Color Now
         </Button>
       </div>

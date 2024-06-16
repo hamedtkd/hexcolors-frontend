@@ -30,7 +30,7 @@ export const Header = () => {
               </a>
             </div>
             <div className="pl-6">
-              <TonConnectButton className="[&_button]:hex-button [&_div]:!text-xl  [&_div]:!font-extrabold [&_button]:h-[56px] h-[56px] [&_button]:ring-2 [&_button]:!ring-[#00558D]" />
+              <TonConnectButton className="[&_button]:hex-button [&_div]:!text-xl font-Proxima  [&_div]:font-Proxima [&_div]:!font-semibold [&_button]:h-[56px] h-[56px] [&_button]:ring-2 [&_button]:!ring-[#00558D]" />
             </div>
           </li>
         </ul>
