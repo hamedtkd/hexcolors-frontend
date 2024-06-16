@@ -1,8 +1,4 @@
-import {
-  ArrowPointingIn,
-  CloseIcon,
-  EyeDropper,
-} from "@/assets/icons";
+import { ArrowPointingIn, CloseIcon, EyeDropper } from "@/assets/icons";
 import { useState } from "react";
 import ColorPicker from "react-pick-color";
 import "./style.css";
@@ -10,6 +6,7 @@ import GradientText from "@/components/ui/GradientText";
 import { GetColorName } from "hex-color-to-color-name";
 import { getBrightness } from "@/lib/utils";
 import CopyButton from "@/components/ui/CopyButtom";
+import Button from "@/components/ui/Button";
 export default function ColorInput() {
   const [hexColor, setHexColor] = useState("#0098ea");
   const [open, setOpen] = useState(false);
@@ -51,7 +48,7 @@ export default function ColorInput() {
       className="pb-20 3xl:max-w-[1560px] max-w-[1224px] mx-auto w-full transition-all duration-1000"
     >
       <GradientText className="flex items-center mb-6">
-        <h3 className="max-w-[170px] text-sm ">
+        <h3 className="max-w-[170px] text-sm  leading-[15px]">
           After mint your color, this color be your own on your telegram
           background
         </h3>
@@ -94,7 +91,7 @@ export default function ColorInput() {
           <p className=" font-semibold text-xl">{hexColor}</p>
           <h4 className="text-[48px] font-extrabold">{colorName}</h4>
         </div>
-        <div className="!rounded-xl border pb-4 ">
+        <div className="!rounded-xl border border-[#E2E7EB] pb-4 ">
           <ColorPicker
             theme={{
               background: "transparent",
@@ -116,6 +113,9 @@ export default function ColorInput() {
             <CopyButton text={hexColor} />
           </div>
         </div>
+      </div>
+      <div className="mt-6">
+        <Button className="font-semibold text-xl">Mint Color Now</Button>
       </div>
       <div>
         {open && (
