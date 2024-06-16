@@ -47,13 +47,13 @@ export default function ColorInput() {
       }}
       className="pb-20 3xl:max-w-[1560px] max-w-[1224px] mx-auto w-full transition-all duration-1000"
     >
-      <GradientText className="flex items-center mb-6">
-        <h3 className="max-w-[170px] text-sm  leading-[15px]">
+      <GradientText className="flex items-start mb-6">
+        <h3 className="max-w-[170px] text-sm font-semibold  leading-[15px]">
           After mint your color, this color be your own on your telegram
           background
         </h3>
         <img
-          className="rotate-[22deg]"
+          className="rotate-[22deg] -translate-x-3 translate-y-1"
           width={56.9}
           height={66.38}
           src="/svg/arrowDown.svg"
@@ -100,7 +100,7 @@ export default function ColorInput() {
               borderColor: "#E2E7EB",
             }}
             hideAlpha
-            className="custom-input-color !border-0 input[name='hex']:bg-red-500 !shadow-none [&_*]:!text-base  [&_input]: [&_input]:!py-0 [&_input]:!outline-none [&_input]:!ring-0 [&_input]:focus:!border-none  [&_input]:!h-6"
+            className="custom-input-color !border-0 input[name='hex']:bg-red-500 !shadow-none [&_*]:!text-base   [&_input]:!py-5 [&_input]:!px-3 [&_input]:!w-[50px] [&_input]:!outline-none [&_input]:!ring-0 [&_input]:focus:!border-none  [&_input]:!h-6"
             color={hexColor}
             onChange={(color) => setHexColor(color.hex)}
           />
@@ -115,7 +115,9 @@ export default function ColorInput() {
         </div>
       </div>
       <div className="mt-6">
-        <Button className="font-semibold text-xl">Mint Color Now</Button>
+        <Button className="font-semibold text-xl text-white">
+          Mint Color Now
+        </Button>
       </div>
       <div>
         {open && (
