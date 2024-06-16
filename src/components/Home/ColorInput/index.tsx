@@ -6,6 +6,7 @@ import GradientText from "@/components/ui/GradientText";
 import { GetColorName } from "hex-color-to-color-name";
 import { getBrightness } from "@/lib/utils";
 import CopyButton from "@/components/ui/CopyButtom";
+import Button from "@/components/ui/Button";
 export default function ColorInput() {
   const [hexColor, setHexColor] = useState("#0098ea");
   const [open, setOpen] = useState(false);
@@ -112,6 +113,9 @@ export default function ColorInput() {
             <CopyButton text={hexColor} />
           </div>
         </div>
+      </div>
+      <div className="mt-6">
+        <Button className="font-semibold text-xl">Mint Color Now</Button>
       </div>
       <div>
         {open && (
