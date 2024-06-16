@@ -20,6 +20,7 @@ module.exports = {
   },
   plugins: ["@typescript-eslint", "react", "prettier"], // prettier
   rules: {
+    "@typescript-eslint/no-explicit-any": ["off"],
     // suppress errors for missing 'import React' in files
     "react/react-in-jsx-scope": "off",
     // allow jsx syntax in js files (for next.js project)
