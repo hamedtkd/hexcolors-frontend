@@ -1,4 +1,8 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
+const {
+  fontFamily
+} = require("tailwindcss/defaultTheme");
+import tailwindcssAnimated from 'tailwindcss-animated';
+import tailwindcssAnimate from 'tailwindcss-animate';
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -20,7 +24,7 @@ module.exports = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "var(--primary)",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -58,19 +62,71 @@ module.exports = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
+          from: {
+            height: "0"
+          },
+          to: {
+            height: "var(--radix-accordion-content-height)"
+          },
         },
         "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+          from: {
+            height: "var(--radix-accordion-content-height)"
+          },
+          to: {
+            height: "0"
+          },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      screens: {
+        'sm': '0px',
+        'md': '768px',
+        'lg': "1024px",
+        'xl': "1366px",
+        '2xl': "1536px",
+        '3xl': "1920px",
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+  tailwindcssAnimated,
+  tailwindcssAnimate,
+    function ({
+      addComponents
+    }) {
+      addComponents({
+        ".container": {
+          maxWidth: "100%",
+          "@screen sm": {
+            // minWidth: '0',
+            padding: "0 1rem",
+          },
+          "@screen md": {
+            // minWidth: '768px',
+            padding: "0 1rem",
+          },
+          "@screen lg": {
+            // minWidth: '1024px',
+            padding: "0 1.5rem",
+          },
+          "@screen xl": {
+            // minWidth: '1366px',
+            padding: "0 2rem",
+          },
+          "@screen 2xl": {
+            // minWidth: '1536px',
+            padding: "0 64px",
+          },
+          "@screen 3xl": {
+            // minWidth: '1920px',
+            padding: "0 64px",
+          },
+        },
+      });
+    },
+  ],
 };
