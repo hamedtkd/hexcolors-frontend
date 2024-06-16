@@ -2,7 +2,7 @@ import { TonConnectButton } from "@tonconnect/ui-react";
 
 export const Header = () => {
   return (
-    <header className="container mx-auto py-4">
+    <header className="container mx-auto py-4 border-b mb-[70px] border-[#C8D2D9]">
       <nav>
         <ul className="flex items-center justify-between w-full">
           <li>
@@ -13,6 +13,7 @@ export const Header = () => {
           <li className="flex items-center divide-x divide-[#C8D2D9]">
             <div className="flex gap-2 pr-6">
               <a
+                className="hex-button flex items-center rounded-full bg-transparent w-fit border-black size-[56px] p-3 "
                 rel="noopener noreferrer"
                 target="_blank"
                 href="https://getgems.io/"
@@ -20,6 +21,7 @@ export const Header = () => {
                 <img src="/svg/GetGems.svg" alt="getgems" />
               </a>
               <a
+                className="hex-button flex items-center rounded-full bg-transparent w-fit border-black size-[56px] p-3 "
                 rel="noopener noreferrer"
                 target="_blank"
                 href="https://tonviewer.com/"
@@ -28,7 +30,7 @@ export const Header = () => {
               </a>
             </div>
             <div className="pl-6">
-              <TonConnectButton className="[&_button]:bg-primary [&_button]:h-[56px] h-[56px] [&_button]:ring-2 [&_button]:!ring-[#00558D]" />
+              <TonConnectButton className="[&_button]:hex-button [&_div]:!text-xl  [&_div]:!font-extrabold [&_button]:h-[56px] h-[56px] [&_button]:ring-2 [&_button]:!ring-[#00558D]" />
             </div>
           </li>
         </ul>

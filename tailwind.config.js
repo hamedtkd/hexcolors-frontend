@@ -90,6 +90,9 @@ module.exports = {
         '2xl': "1536px",
         '3xl': "1920px",
       },
+      boxShadow: {
+        'custom': '-2px 6px 0px 0px #c8d2d9',
+      }
     },
   },
   plugins: [
