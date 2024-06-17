@@ -15,6 +15,7 @@
     --border: #e2e7eb;
     --primary: #0098ea;
     --secondary: 210 40% 96.1%;
+    color: #20262C;
   }
 }
 
@@ -23,16 +24,18 @@
     @apply border-border;
     font-family: "Proxima Nova Font";
   }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background ;
     font-feature-settings:
-      "rlig" 1,
-      "calt" 1;
+      "rlig"1,
+      "calt"1;
   }
 }
+
 @layer components {
   .hex-button {
-    @apply w-full bg-[#0098ea] py-4 px-4 h-[56px] border-2 border-[#00558d] rounded-full shadow-custom transition-all   cursor-pointer flex items-center justify-center;
+    @apply font-semibold text-xl w-full  text-white bg-[#0098ea] py-4 px-4 h-[56px] border-2 border-[#00558d] rounded-full shadow-custom transition-all cursor-pointer flex items-center justify-center;
     font-family: inherit;
   }
 
@@ -45,3 +48,4 @@
   }
 
 }
+

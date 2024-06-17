@@ -42,6 +42,7 @@ export default function ColorInput() {
 
   return (
     <section
+      id="mint-color"
       style={{
         color: textColor,
       }}

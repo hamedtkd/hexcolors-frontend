@@ -2,7 +2,7 @@ import GradientText from "../ui/GradientText";
 
 export default function HeroSection() {
   return (
-    <div className="max-w-[720px] text-center ] -tracking-[.5px] space-y-6">
+    <div className="max-w-[720px] text-center ] -tracking-[.5px] space-y-6 mx-auto">
       <GradientText>
         <h1 className="text-[72px] leading-[73px] font-semibold">
           Use, see, enjoy <br />

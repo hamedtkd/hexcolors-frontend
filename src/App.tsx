@@ -1,9 +1,12 @@
+import { ReactLenis } from "@studio-freight/react-lenis";
 import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-     <Home />
+      <ReactLenis root>
+        <Home />
+      </ReactLenis>
     </>
   );
 }
